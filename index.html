@@ -1,19 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <title>App Mongo</title>
+  <meta charset="UTF-8">
+  <title>Cadastro de Usuário</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Cadastro</h1>
+  <div class="container">
+    <div class="card">
 
-  <input id="nome" placeholder="Nome">
-  <input id="email" placeholder="Email">
-  <button onclick="criarUsuario()">Cadastrar</button>
+      <h1>Cadastro de Usuário</h1>
+      <p>Preencha os dados abaixo</p>
 
-  <ul id="lista"></ul>
+      <div class="form-group">
+        <label>Nome</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Digite seu email">
+      </div>
+
+      <button onclick="criarUsuario()">Cadastrar</button>
+
+     
+
+    </div>
+  </div>
 
   <script src="script.js"></script>
-
 </body>
 </html>
